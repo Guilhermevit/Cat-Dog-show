@@ -1,54 +1,134 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
-import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
 import TextField from "@mui/material/TextField";
-import AccountCircle from "@mui/icons-material/AccountCircle";
+import { Button } from "@mui/material";
+
+import "./header.css";
 
 export default function Headers() {
+  const [buttonStyle, setButtonStyle] = useState({
+    color: "#7c67079b",
+  });
+
+  const customButtonHoverStyle = {
+    ...buttonStyle,
+    backgroundColor: "white",
+  };
   return (
-    <header>
-      <div className="logo">
-        <Link to="/home">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQrcZW0E0Zkq3d_6IYjPcrRyvbDZSy0Ug5cA&usqp=CAU"
-            alt="Logo da Loja"
+    <>
+      <header className="header">
+        <div className="logo">
+          <Link to="/home">
+            <img
+              src="./logo.jpg"
+              alt="Logo da Loja"
+              width="200px"
+              height="150px"
+            />
+          </Link>
+        </div>
+        <div className="pesquisa">
+          <TextField
+            id="outlined-textarea"
+            label="Produtos"
+            placeholder="o que seu pet precisa?"
+            style={{ width: "50%" }}
           />
-        </Link>
-        <TextField
-          id="outlined-textarea"
-          label="Produtos"
-          placeholder="o que seu pet precisa?"
-          style={{ width: "400px" }}
+          <Button className="lupa">
+            {" "}
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkBCZ3_Wo5bKmIWQSTTN8TRTMyl2qp6nosRA&usqp=CAU"
+              alt="lupinha"
+              width="40px"
+            />
+          </Button>
+
+          <Button className="shopping">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqeQKC741sH_vTY7iY5_N2iXvO3SERNX4qg&usqp=CAU"
+              alt="carrinho_de_compra"
+              width="45px"
+            />
+          </Button>
+        </div>
+      </header>
+      <div className="menu">
+        <div>
+          <Button
+            style={buttonStyle}
+            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+            size="small"
+            variant="text"
+          >
+            home
+          </Button>
+        </div>
+        <div>
+          <Button
+            style={buttonStyle}
+            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+            size="small"
+            variant="text"
+          >
+            Cachorro
+          </Button>
+        </div>
+        <div>
+          <Button
+            style={buttonStyle}
+            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+            size="small"
+            variant="text"
+          >
+            Gato
+          </Button>
+        </div>
+        <div>
+          <Button
+            style={buttonStyle}
+            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+            size="small"
+            variant="text"
+          >
+            Répteis e Insetos
+          </Button>
+        </div>
+        <div>
+          <Button
+            style={buttonStyle}
+            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+            size="small"
+            variant="text"
+          >
+            Compras
+          </Button>
+        </div>
+        <div>
+          <Button
+            style={buttonStyle}
+            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+            size="small"
+            variant="text"
+          >
+            Nos deixe um card
+          </Button>
+        </div>
+      </div>
+      <div className="banner">
+        <img
+          src="https://www2.itanhaem.sp.gov.br/wp-content/uploads/2017/06/adote-animal_foto-site-750x450px.png"
+          alt="adoto_um_pet"
+          width="90%"
+          height="600px"
         />
       </div>
-      <div className="cart-icon">
-        <Link to="/carrinho">
-          <img src="carrinho.png" alt="Ícone do Carrinho de Compras" />
-        </Link>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Página Inicial</Link>
-          </li>
-          <li>
-            <Link to="/produtos">Produtos</Link>
-          </li>
-          <li>
-            <Link to="/sobre">Sobre Nós</Link>
-          </li>
-          <li>
-            <Link to="/contato">Contato</Link>
-          </li>
-          <li>
-            <Link to="/carrinho">Carrinho</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    </>
   );
 }

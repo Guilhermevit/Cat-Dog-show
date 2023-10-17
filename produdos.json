@@ -1,0 +1,67 @@
+{
+  "Produtos": [
+    {
+      "id": 1,
+      "nome": "Produto 1",
+      "descricao": "Descrição do Produto 1",
+      "preco": 19.99,
+      "imagem": "https://exemplo",
+      "tipos": "Cachorros"
+    },
+    {
+      "id": 2,
+      "nome": "Produto 2",
+      "descricao": "Descrição do Produto 2",
+      "preco": 29.99,
+      "imagem": "https://exemplo"
+    }
+  ],
+  "Cachorros": [
+    {
+      "id": 1,
+      "nome": "Ração para Cachorro",
+      "descricao": "Ração premium para cachorros",
+      "preco": 49.99,
+      "imagem": "https://exemplo"
+    },
+    {
+      "id": 2,
+      "nome": "Coleira para Cachorro",
+      "descricao": "Coleira resistente e ajustável",
+      "preco": 9.99,
+      "imagem": "https://exemplo"
+    }
+  ],
+  "Gatos": [
+    {
+      "id": 1,
+      "nome": "Ração para Gato",
+      "descricao": "Ração de alta qualidade para gatos",
+      "preco": 39.99,
+      "imagem": "https://exemplo"
+    },
+    {
+      "id": 2,
+      "nome": "Brinquedo para Gato",
+      "descricao": "Brinquedo interativo para gatos",
+      "preco": 14.99,
+      "imagem": "https://exemplo"
+    }
+  ],
+  "Repteis": [
+    {
+      "id": 1,
+      "nome": "Terrário para Répteis",
+      "descricao": "Terrário espaçoso para répteis",
+      "preco": 99.99,
+      "imagem": "https://exemplo"
+    },
+    {
+      "id": 2,
+      "nome": "Lâmpada de Calor",
+      "descricao": "Lâmpada de calor para répteis",
+      "preco": 19.99,
+      "imagem": "https://exemplo"
+    }
+  ]
+}

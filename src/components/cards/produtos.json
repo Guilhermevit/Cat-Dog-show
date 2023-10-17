@@ -1,0 +1,290 @@
+{
+  "Produtos": [
+    {
+      "id": 1,
+      "nome": "Focinheira para Cachorro",
+      "descricao": "A Focinheira para Cachorros foi criada para oferecer proteção total ao focinho dos cães, permitindo que os pets consigam beber líquidos normalmente e não tenham nenhuma dificuldade de respiração em função do uso desse equipamento. Podem ser utilizadas como forma de proteção para uma socialização segura durante passeios ou brincadeiras com adultos e crianças, durante viagens, para consultas com o veterinário ou durante o banho e tosa.",
+      "preco": 97.90,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/Produto0-FocinheiraMachaparacachorros-DogSoftNose_500x.jpg?v=1670280424",
+      "tipo": "Produto"
+    },
+    {
+      "id": 2,
+      "nome": "Bolinha puxa-puxa para Cachorros",
+      "descricao": "Imagine a frustração que seu fiel amigo sente quando está entediado e não tem nada para fazer. Ele pode recorrer a móveis e objetos da casa, causando danos e deixando você chateado. Apresentamos a você a Bolinha puxa-puxa para Cachorros - Push Ball!",
+      "preco": 89.90,
+      "imagem": "https://petmagia.com.br/cdn/shop/files/Hd5e152a795e1485da3a443aa11331ba75_500x.jpg?v=1693837949",
+      "tipo": "Produto"
+    },
+    {
+      "id": 3,
+      "nome": "Fonte de água para Gatos",
+      "descricao": "A Fonte de Água com Filtro para Gatos - Bebedouro 1,5L é a escolha perfeita para quem quer garantir que seu gato tenha sempre água limpa e fresca disponível. Com sua capacidade de 1,5L, esta fonte é ideal para um ou mais gatos, proporcionando água suficiente por um longo período de tempo.",
+      "preco": 149.90,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/S031cd85a815a4689b88bc32f3d22cfcfe_500x.jpg?v=1679511297",
+      "tipo": "Produto"
+    },
+    {
+      "id": 4,
+      "nome": "Tapete Higiênico para Gatos",
+      "descricao": "Cuidadosamente pensado para uma melhor higiene e segurança de seu gatinho, esse tapete é fabricado com uma combinação de uma borracha macia e de PVC. O tapete possui uma primeira camada em tela que captura diversas sujeiras das patas dos gatos, tais como grãos de areia, pedras e sílicas. Possui ainda uma segunda camada emborrachada que permite o armazenamento dessas sujeiras, evitando que espalhem e baguncem o ambiente.",
+      "preco": 119.90,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/Produto0.2-PRETO-Tapetehigienicoparagatos-idealpcaixadeareia_500x.jpg?v=1670279999",
+      "tipo": "Produto"
+    },
+    {
+      "id": 5,
+      "nome": "Cama de Bambu para Cachorros e Gatos",
+      "descricao": "O Pet Couch é a escolha perfeita para quem procura uma cama de qualidade para seus animais de estimação. Feito de bambu tecelado, este produto é durável e resistente, oferecendo aos animais de estimação um local seguro e confortável para dormir ou relaxar. Disponível em três tamanhos diferentes, o Pet Couch pode ser facilmente adaptado às necessidades do seu animal de estimação. Com um encosto e almofadas feitas de linho e algodão, o Pet Couch garante o conforto e o suporte necessários para que seu animal possa descansar adequadamente. ",
+      "preco": 189.90,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/Sbfc422fd129c4bf48f46c35c8e753e7eG_500x.jpg?v=1679679183",
+      "tipo": "Produto"
+    },
+    {
+      "id": 6,
+      "nome": "Sapato para Cachorro",
+      "descricao": "Esses sapatinhos para cachorros foram desenvolvidos para proteger as patas de seus cães e, ao mesmo tempo, mantê-los confortáveis. Feitas com material de alta qualidade, as botas para cachorro possuem solado impermeável e antiderrapante. Os sapatos são ideais para levar seus pets para passeios no chão quente, na chuva ou em terrenos ásperos, como calçadas ou asfaltos, ou simplesmente para proteger as patinhas e evitar que seus cachorros levem para dentro de casa toda a sujeira do percurso do passeio. Além disso, cada sapato possui duas tiras ajustáveis de velcro, construídas com material reflexivo, que irão brilhar no escuro e deixarão seu doguinho mais seguro. Com certeza seu pet vai fazer muito sucesso nos passeios com esses divertidos sapatos.",
+      "preco": 159.90,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/product-image-1412988214_500x.jpg?v=1670280176",
+      "tipo": "Produto"
+    },
+    {
+      "id": 7,
+      "nome": "Roupinha para Cachorro",
+      "descricao": "O blusão de tricô Rainbow é uma roupinha charmosa para seu doguinho. É super moderna, além de quentinha e confortável, e tem tons das cores do arco-íris. Além disso, possui mangas estilosas que se diferenciam das roupas comuns. Com certeza seu pet vai fazer sucesso nas fotos e nas redes sociais e vai chamar muito a atenção por onde passar com esse blusão divertido e colorido.",
+      "preco": 139.90,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/FOTOPRODUTO0-roupatricorainbow_500x.jpg?v=1670280065",
+      "tipo": "Produto"
+    },
+    {
+      "id": 8,
+      "nome": "Capacete para Gatos",
+      "descricao": "Os capacetes Cat Helmet são ideais para gatos pequenos e médio andarem de moto ou bicicleta. Criados com um design bonito e charmoso, esses capacetes vão fazer seus pets chamarem a atenção pode onde passarem, além garantirem a segurança dos seus animais.",
+      "preco": 147.90,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/Produto0-CapaceteparaCachorroseGatos-PetitHelmet_500x.jpg?v=1670280593",
+      "tipo": "Produto"
+    },
+    {
+      "id": 9,
+      "nome": "Coleira anti-fuga para Gatos",
+      "descricao": "Quer sair para passear com seu gato e tem medo dele fugir? A Coleira para Gatos à prova de fugas foi criada para solucionar esse problema. Com ela, você poderá passear tranquilamente com seu gatinho, sem deixar seu pet em risco.",
+      "preco": 119.90,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/PRODUTO1OK2-ColeiraparaGatosanti-fuga-CatSmart_500x.jpg?v=1670280620",
+      "tipo": "Produto"
+    },
+    {
+      "id": 10,
+      "nome": "Roupinha para Cachorros",
+      "descricao": "Cuidadosamente pensado para uma melhor higiene e segurança de seu gatinho, esse tapete é fabricado com uma combinação de uma borracha macia e de PVC. O tapete possui uma primeira camada em tela que captura diversas sujeiras das patas dos gatos, tais como grãos de areia, pedras e sílicas. Possui ainda uma segunda camada emborrachada que permite o armazenamento dessas sujeiras, evitando que espalhem e baguncem o ambiente.",
+      "preco": 97.90,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/product-image-1650031747_500x.jpg?v=1670280084",
+      "tipo": "Produto"
+    }
+  ],
+  "Cachorros": [
+    {
+      "id": 11,
+      "nome": "Mochila Canguru para Cachorros",
+      "descricao": "A mochila canguru Pet Outback foi criada para transportar seu Pet ou levá-lo para um gostoso passeio. Com design anatômico e um tecido acolchoado e respirável, a mochila cria um ambiente aconchegante, que ajuda a acalmar a ansiedade do cão. Pode ser utilizada com cachorros de grande, médio, ou pequeno porte, pois possui tamanhos variados, e alças e fechos ajustáveis, que ajudam a acomodar os cachorros de maneira segura e confortável, além das diversas cores disponíveis.",
+      "preco": 199.90,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/HTB1dbOPXyrxK1RkHFCcq6AQCVXaB_500x.jpg?v=1670280593",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 12,
+      "nome": "Ração Premier Pet Raças Específicas Shih Tzu Adulto",
+      "descricao": "Cada raça possui suas particularidades e se beneficia de cuidados especiais. Pensando nestas necessidades a Premier Pet criou Premier Raças Específicas, a primeira linha mundial de nutrição específica para raças. Desenvolvida com ingredientes nobres e alta tecnologia, Premier Raças Específicas oferece benefícios exclusivos que visam minimizar os principais problemas de saúde das raças e auxiliar para o pleno desenvolvimento de suas características típicas desejáveis. A Ração Premier Pet Raças Específicas Shih Tzu Adulto foi formulada a partir deste conceito e oferece tudo o que esta raça precisa para manter sua saúde e beleza aliado ao exclusivo sabor salmão. Uma nova e exclusiva opção oferecida pela PremieRpet®. Oferece ainda redução do volume e odor de fezes minimizando possíveis inconvenientes de uma convivência tão próxima entre os cães e seus proprietários.",
+      "preco": 197.99,
+      "imagem": "https://www.petlove.com.br/images/products/261693/product/Ra%C3%A7%C3%A3o_Premier_Pet_Ra%C3%A7as_Espec%C3%ADficas_Shih_Tzu_Adulto_-_7_5_Kg_31023563-3.jpg?1662036691",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 13,
+      "nome": "Ração Seca True para Cães Adultos Raças Médias e Grandes",
+      "descricao": "Inspirada no amor que sentimos por eles, a True foi desenvolvida para oferecer a melhor alimentação para os nossos pets.",
+      "preco": 227.99,
+      "imagem": "https://www.petlove.com.br/images/products/255531/product/Ra%C3%A7%C3%A3o_Seca_True_para_C%C3%A3es_Adultos_Ra%C3%A7as_M%C3%A9dias_e_Grandes_10_1KG_2638254.png?1653046196",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 14,
+      "nome": "Ração Seca Nutrilus Pro+ Frango & Carne para Cães Adultos",
+      "descricao": "A Nutrilus é uma marca de ração para cachorros e gatos desenvolvida por médicos veterinários e produzida com ingredientes selecionados, sem corantes e sem aromatizantes artificiais, que oferece uma alimentação balanceada, nutritiva e saborosa ao animal. É uma ração premium especial que proporciona nutrição de alta qualidade com um dos melhores custo-benefício do mercado pet. Perfeita para nutrir e alegrar o seu pet! Com venda exclusiva nos canais da Petlove, você encontra a ração Nutrilus para cachorros filhotes, adultos e idosos e para gatos adultos e castrados.",
+      "preco": 153.99,
+      "imagem": "https://www.petlove.com.br/images/products/267509/product/%2820%29_Ra%C3%A7%C3%A3o_Seca_Nutrilus_Pro__Frango___Carne_para_C%C3%A3es_Adultos_2.jpg?1680129321",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 15,
+      "nome": "Ração Úmida Pedigree Sachê Cordeiro ao Molho para Cães Adultos",
+      "descricao": "A Ração Úmida Pedigree Sachê Cordeiro ao Molho para Cães Adultos de Raças Pequenas é feita com deliciosos pedaços de carne cozidos a vapor que proporcionam aos cães todo o sabor que eles adoram. É uma refeição completa e balanceada para ser servida todos os dias. Também possui um balanço ideal de fibras, que proporciona fezes mais firmes e fáceis de limpar.",
+      "preco": 7.99,
+      "imagem": "https://www.petlove.com.br/images/products/241784/product/1193389_Ra%C3%A7%C3%A3o_%C3%9Amida_Pedigree_Sach%C3%AA_Cordeiro_ao_Molho_para_C%C3%A3es_Adultos_de_Ra%C3%A7as_Pequenas_1.jpg?1627785475",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 16,
+      "nome": "Ração Special Dog Gold Premium Especial",
+      "descricao": "A Ração Special Dog Gold Premium Especial para Cães Adultos é um alimento Premium Especial, completo e balanceado indicado para cães adultos. Elaborado por veterinários, possui ingredientes especiais em sua fórmula, como a batata-doce e a condroitina.",
+      "preco": 188.99,
+      "imagem": "https://www.petlove.com.br/images/products/268696/product/Ra%C3%A7%C3%A3o_Special_Dog_Gold_Premium_Especial_Frango_e_Carne_para_C%C3%A3es_Adultos_1777508_1.jpg?1684848798",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 17,
+      "nome": "Ração Seca Nutrilus Pro+ Carne",
+      "descricao": "Nutrilus Pro Gatos Adultos é uma ração premium especial, desenvolvida por médicos veterinários com ingredientes selecionados, sem corantes e sem aromatizantes artificiais, garantindo uma alimentação balanceada e um sabor irresistível, com o melhor custo-benefício.",
+      "preco": 214.99,
+      "imagem": "https://www.petlove.com.br/images/products/250518/product/2661128_FRENTE.jpg?1635791683",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 18,
+      "nome": "Ração Premier Pet Raças Específicas Shih Tzu Adulto",
+      "descricao": "Cada raça possui suas particularidades e se beneficia de cuidados especiais. Pensando nestas necessidades a Premier Pet criou Premier Raças Específicas, a primeira linha mundial de nutrição específica para raças. Desenvolvida com ingredientes nobres e alta tecnologia, Premier Raças Específicas oferece benefícios exclusivos que visam minimizar os principais problemas de saúde das raças e auxiliar para o pleno desenvolvimento de suas características típicas desejáveis. A Ração Premier Pet Raças Específicas Shih Tzu Adulto foi formulada a partir deste conceito e oferece tudo o que esta raça precisa para manter sua saúde e beleza aliado ao exclusivo sabor salmão. Uma nova e exclusiva opção oferecida pela PremieRpet®. Oferece ainda redução do volume e odor de fezes minimizando possíveis inconvenientes de uma convivência tão próxima entre os cães e seus proprietários.",
+      "preco": 197.99,
+      "imagem": "https://www.petlove.com.br/images/products/261693/product/Ra%C3%A7%C3%A3o_Premier_Pet_Ra%C3%A7as_Espec%C3%ADficas_Shih_Tzu_Adulto_-_7_5_Kg_31023563-3.jpg?1662036691",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 19,
+      "nome": "Ração Fórmula Natural Life Super Premium",
+      "descricao": "A Ração Fórmula Natural Life Super Premium para Cães Adultos Raças Mini e Pequena oferece todos os cuidados a partir de um ano de idade. Com um conceito natural do produto às embalagens, a Fórmula Natural foi formulada para promover uma vida mais saudável, longeva e de bem-estar para cães e gatos. A linha oferece versões para diferentes portes e idades e proporciona entre outros benefícios, cuidados com a pele e pelagem, equilíbrio da flora intestinal e antioxidantes naturais. A embalagem I'm Green, foi desenvolvida em polietileno verde. I'm green têm como matéria prima a cana- de-açúcar, fonte renovável que auxilia na captura de gases causadores do efeito estufa",
+      "preco": 286.99,
+      "imagem": "https://www.petlove.com.br/images/products/243631/product/1_3107895_Ra%C3%A7%C3%A3o-F%C3%B3rmula-Natural-Super-Premium-para-C%C3%A3es-Adultos-Ra%C3%A7as-Mini-e-Pequena.jpg?1628875695",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 20,
+      "nome": "Ração Premier Pet Raças Específicas Shih Tzu Adulto",
+      "descricao": "Cada raça possui suas particularidades e se beneficia de cuidados especiais. Pensando nestas necessidades a Premier Pet criou Premier Raças Específicas, a primeira linha mundial de nutrição específica para raças. Desenvolvida com ingredientes nobres e alta tecnologia, Premier Raças Específicas oferece benefícios exclusivos que visam minimizar os principais problemas de saúde das raças e auxiliar para o pleno desenvolvimento de suas características típicas desejáveis. A Ração Premier Pet Raças Específicas Shih Tzu Adulto foi formulada a partir deste conceito e oferece tudo o que esta raça precisa para manter sua saúde e beleza aliado ao exclusivo sabor salmão. Uma nova e exclusiva opção oferecida pela PremieRpet®. Oferece ainda redução do volume e odor de fezes minimizando possíveis inconvenientes de uma convivência tão próxima entre os cães e seus proprietários.",
+      "preco": 197.99,
+      "imagem": "https://www.petlove.com.br/images/products/261693/product/Ra%C3%A7%C3%A3o_Premier_Pet_Ra%C3%A7as_Espec%C3%ADficas_Shih_Tzu_Adulto_-_7_5_Kg_31023563-3.jpg?1662036691",
+      "tipo": "Cachorros"
+    }
+  ],
+  "Gatos": [
+    {
+      "id": 21,
+      "nome": "Ração Seca Optimum Frango para Gatos ",
+      "descricao": "A Ração Seca Optimum Frango para Gatos Adultos Castrados, elaborada com excelentes matérias-primas, proteínas selecionadas cuidadosamente e nutrientes fundamentais para uma alimentação completa e saudável. Têm como único objetivo promover ao seu gato o aproveitamento máximo do alimento, para que desfrute por completo do melhor da vida. Proporciona excelente absorção dos nutrientes, ajuda na manutenção da saúde do trato urinário, pelos e pele mais saudáveis. Enriquecida com Taurina, nutriente necessário para um coração saudável. Com formulação que favorece a condição física, já que gatos castrados têm tendência ao ganho excessivo de peso. Ração Seca Optimum Frango para Gatos Adultos Castrados, alimento completo feito especialmente sob medida para atender as necessidades do seu pet.",
+      "preco": 211.99,
+      "imagem": "https://www.petlove.com.br/images/products/248703/product/_0024_Ra%C3%A7%C3%A3o_Optimum_para_Gatos_Adultos_Castrados_1__anos_Frango_10_1_kg_2034869_59.jpg?1633705178",
+      "tipo": "Gatos"
+    },
+    {
+      "id": 22,
+      "nome": "Ração Royal Canin Sachê Feline Sterilised",
+      "descricao": "Ração premium para cachorros",
+      "preco": 112.99,
+      "imagem": "https://www.petlove.com.br/images/products/271147/product/31027527312.jpg?1689850620",
+      "tipo": "Gatos"
+    },
+    {
+      "id": 23,
+      "nome": "Ração Úmida Pet Delícia Natural Maravilha de Frango para Gatos",
+      "descricao": "A Ração Úmida Pet Delícia Natural Maravilha de Frango para Gatos é um alimento balanceado desenvolvido para gatos adultos, receita 100 % natural, feita com frango e legumes frescos. A composição oferece uma umidade ideal e sódio controlado, contendo gorduras saudáveis, rica em ômegas 3 e 6, fibras e prebióticos que contribuem para a melhora do sistema digestivo, além de deixar os pelos com brilho e a pele mais saudável. Ajuda a controlar o açúcar no sangue, a regular do colesterol, além de promover promover a saúde do coração e ter fácil digestão. Uma ração saborosa e cheirosa, ideal para felinos sensíveis.",
+      "preco": 49.99,
+      "imagem": "https://www.petlove.com.br/images/products/265861/product/Ra%C3%A7%C3%A3o_%C3%9Amida_Pet_Del%C3%ADcia_Natural_Maravilha_de_Frango_-_320_g_3.jpg?1674000122",
+      "tipo": "Gatos"
+    },
+    {
+      "id": 24,
+      "nome": "Ração Seca PremieR Pet Golden Gatos Adultos Salmão",
+      "descricao": "A Ração Seca PremieR Pet Golden Gatos Adultos Salmão é formulada com ingredientes de alta qualidade e balanceada para suprir às particularidades nutricionais dos felinos, e oferece sabor irresistível e cuidados especiais com o trato urinário, garantindo assim, sabor e saúde para seu gato.",
+      "preco": 149.99,
+      "imagem": "https://www.petlove.com.br/images/products/213120/product/Ra%C3%A7%C3%A3o_Golden_Gatos_Adultos_Salm%C3%A3o_31017088_10_1kg_lateral.jpg?1627684438",
+      "tipo": "Gatos"
+    },
+    {
+      "id": 25,
+      "nome": "Ração Premier Pet Ambientes Internos Gatos Filhotes Frango",
+      "descricao": "Seu filhote atravessa uma das fases mais importantes da vida, quando os cuidados oferecidos são decisivos para garantir um crescimento adequado e cheio de saúde. A Ração Premier Pet Ambientes Internos Gatos Filhotes Frango é elaborada com as fontes mais nobres de proteínas, fibras e gorduras, por isso, o desenvolvimento do seu pequeno felino será o melhor possível. Para sua saúde intestinal, ainda delicada, o alimento é enriquecido com prebióticos que ajudam na formação da flora benéfica. Além disso, Premier Gatos Filhotes proporciona uma pelagem muito mais bonita e macia, ideal para receber seu carinho.",
+      "preco": 199.99,
+      "imagem": "https://www.petlove.com.br/images/products/215272/product/Ra%C3%A7%C3%A3o_Premier_Pet_Ambientes_Internos_Gatos_Filhotes_Frango_3107631_L_7_5.jpg?1627691248",
+      "tipo": "Gatos"
+    },
+    {
+      "id": 5,
+      "nome": "Ração para Cachorro",
+      "descricao": "Ração premium para cachorros",
+      "preco": 49.99,
+      "imagem": "https://exemplo",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 5,
+      "nome": "Ração para Cachorro",
+      "descricao": "Ração premium para cachorros",
+      "preco": 49.99,
+      "imagem": "https://exemplo",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 5,
+      "nome": "Ração para Cachorro",
+      "descricao": "Ração premium para cachorros",
+      "preco": 49.99,
+      "imagem": "https://exemplo",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 5,
+      "nome": "Ração para Cachorro",
+      "descricao": "Ração premium para cachorros",
+      "preco": 49.99,
+      "imagem": "https://exemplo",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 5,
+      "nome": "Ração para Cachorro",
+      "descricao": "Ração premium para cachorros",
+      "preco": 49.99,
+      "imagem": "https://exemplo",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 5,
+      "nome": "Ração para Cachorro",
+      "descricao": "Ração premium para cachorros",
+      "preco": 49.99,
+      "imagem": "https://exemplo",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 5,
+      "nome": "Ração para Cachorro",
+      "descricao": "Ração premium para cachorros",
+      "preco": 49.99,
+      "imagem": "https://exemplo",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 6,
+      "nome": "Ração para Cachorro",
+      "descricao": "Ração premium para cachorros",
+      "preco": 49.99,
+      "imagem": "https://exemplo",
+      "tipo": "Cachorros"
+    }
+  ],
+  "Repteis": [
+    {
+      "id": 7,
+      "nome": "Ração para Cachorro",
+      "descricao": "Ração premium para cachorros",
+      "preco": 49.99,
+      "imagem": "https://exemplo",
+      "tipo": "Cachorros"
+    },
+    {
+      "id": 8,
+      "nome": "Ração para Cachorro",
+      "descricao": "Ração premium para cachorros",
+      "preco": 49.99,
+      "imagem": "https://exemplo",
+      "tipo": "Cachorros"
+    }
+  ]
+}
