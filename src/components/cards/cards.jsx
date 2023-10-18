@@ -43,7 +43,7 @@ export default function Cards() {
                     <CardMedia
                       component="img"
                       sx={{
-                        width: "90%",
+                        width: "100%",
                         height: "auto",
                         maxHeight: "150px",
                       }}

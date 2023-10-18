@@ -43,14 +43,15 @@ export default function Headers() {
               width="40px"
             />
           </Button>
-
-          <Button className="shopping">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqeQKC741sH_vTY7iY5_N2iXvO3SERNX4qg&usqp=CAU"
-              alt="carrinho_de_compra"
-              width="45px"
-            />
-          </Button>
+          <Link to="/carrinho">
+            <Button className="shopping">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqeQKC741sH_vTY7iY5_N2iXvO3SERNX4qg&usqp=CAU"
+                alt="carrinho_de_compra"
+                width="45px"
+              />
+            </Button>
+          </Link>
         </div>
       </header>
       <div className="menu">
@@ -107,15 +108,17 @@ export default function Headers() {
           </Link>
         </div>
         <div>
-          <Button
-            style={buttonStyle}
-            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
-            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
-            size="small"
-            variant="text"
-          >
-            Compras
-          </Button>
+          <Link to="/carrinho">
+            <Button
+              style={buttonStyle}
+              onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+              onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+              size="small"
+              variant="text"
+            >
+              Compras
+            </Button>
+          </Link>
         </div>
         <div>
           <Button

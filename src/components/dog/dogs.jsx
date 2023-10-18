@@ -18,6 +18,7 @@ export default function Dogs() {
   const [produtos, setProdutos] = useState([]);
   const [progress, setProgress] = useState(10);
   const [loading, setLoading] = useState(true); // Estado para controlar o carregamento
+  const [carrinho, setCarrinho] = useState([]);
 
   function CircularProgressWithLabel(props) {
     return (
@@ -81,16 +82,20 @@ export default function Dogs() {
     };
   }, []);
 
+  const adicionarAoCarrinho = (produto) => {
+    setCarrinho([...carrinho, produto]);
+    console.log("Card Clicado Produto:", produto);
+  };
   return (
     <>
       <Headers />
       <Banner />
       <br />
-      {loading ? ( // Mostra o spinner enquanto loading for verdadeiro
+      {loading ? (
         <CircularProgressWithLabel value={progress} />
       ) : (
         <div>
-          <h2 className="destaque">Produtos para o Au Au</h2>
+          <h2 className="destaque">Produtos para o AU AUUUUU</h2>
           <div style={{ maxWidth: "90%", margin: "0 auto" }}>
             <Grid container spacing={2}>
               {produtos
@@ -104,72 +109,77 @@ export default function Dogs() {
 
                   return (
                     <Grid item key={produto.id} xs={7} sm={4} md={2}>
-                      <Card
-                        sx={{
-                          maxWidth: "400px",
-                          maxHeight: "350px",
-                          minHeight: "350px",
-                        }}
+                      <div
+                        onClick={() => adicionarAoCarrinho(produto)}
+                        style={{ cursor: "pointer" }}
                       >
-                        <CardActionArea>
-                          <CardMedia
-                            component="img"
-                            sx={{
-                              width: "100%",
-                              height: "auto",
-                              maxHeight: "150px",
-                            }}
-                            image={produto.imagem}
-                            alt={produto.nome}
-                          />
-                          <CardContent
-                            sx={{
-                              display: "flex",
-                              flexDirection: "column",
-                            }}
-                          >
-                            <Typography
-                              gutterBottom
-                              variant="h6"
-                              component="div"
-                            >
-                              {produto.nome}
-                            </Typography>
-                            <Typography
-                              variant="body3"
-                              color="text.secondary"
-                              sx={{ flex: 1, textAlign: "justify" }}
-                            >
-                              {produto.descricao}
-                            </Typography>{" "}
-                            <br />
-                            <div
-                              style={{
+                        <Card
+                          sx={{
+                            maxWidth: "400px",
+                            maxHeight: "350px",
+                            minHeight: "350px",
+                          }}
+                        >
+                          <CardActionArea>
+                            <CardMedia
+                              component="img"
+                              sx={{
+                                width: "100%",
+                                height: "auto",
+                                maxHeight: "150px",
+                              }}
+                              image={produto.imagem}
+                              alt={produto.nome}
+                            />
+                            <CardContent
+                              sx={{
                                 display: "flex",
-                                justifyContent: "space-between",
+                                flexDirection: "column",
                               }}
                             >
-                              <Typography variant="body1" color="primary">
-                                R$ {precoOriginal.toFixed(2)}
+                              <Typography
+                                gutterBottom
+                                variant="h6"
+                                component="div"
+                              >
+                                {produto.nome}
                               </Typography>
+                              <Typography
+                                variant="body3"
+                                color="text.secondary"
+                                sx={{ flex: 1, textAlign: "justify" }}
+                              >
+                                {produto.descricao}
+                              </Typography>{" "}
+                              <br />
                               <div
                                 style={{
                                   display: "flex",
-                                  alignItems: "center",
+                                  justifyContent: "space-between",
                                 }}
                               >
-                                <Typography
-                                  variant="body1"
-                                  color="text.secondary"
-                                  style={{ textDecoration: "line-through" }}
-                                >
-                                  R$ {precoComDesconto.toFixed(2)}
+                                <Typography variant="body1" color="primary">
+                                  R$ {precoOriginal.toFixed(2)}
                                 </Typography>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                  }}
+                                >
+                                  <Typography
+                                    variant="body1"
+                                    color="text.secondary"
+                                    style={{ textDecoration: "line-through" }}
+                                  >
+                                    R$ {precoComDesconto.toFixed(2)}
+                                  </Typography>
+                                </div>
                               </div>
-                            </div>
-                          </CardContent>
-                        </CardActionArea>
-                      </Card>
+                            </CardContent>
+                          </CardActionArea>
+                        </Card>
+                      </div>
                     </Grid>
                   );
                 })}

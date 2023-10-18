@@ -8,6 +8,7 @@ import "./styles.css";
 import Footer from "../footer/footer";
 import Banner from "../banner/banner";
 import Snake from "../snake/snake";
+import Shopper from "../shop/shop";
 
 function Welcome() {
   return (
@@ -19,7 +20,9 @@ function Welcome() {
         <Route path="/" element={<Cards />} />
         <Route path="/cachorro" element={<Dogs />} />
         <Route path="/gatos" element={<Cats />} />
+
         <Route path="/reptil" element={<Snake />} />
+        <Route path="/carrinho" element={<Shopper />} />
       </Routes>
       <Footer />
     </div>

@@ -85,6 +85,7 @@ export default function Cats() {
 
   const adicionarAoCarrinho = (produto) => {
     setCarrinho([...carrinho, produto]);
+    console.log("Card Clicado Produto:", produto);
   };
   return (
     <>
