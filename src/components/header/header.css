@@ -9,6 +9,7 @@ header {
 .logo {
   flex: 3;
   padding: 20px;
+  margin-left: 62px;
 }
 
 .pesquisa {
@@ -45,11 +46,18 @@ header {
   .menu {
     display: none;
   }
+
+  .logo {
+    margin-left: 0px;
+  }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .menu {
     margin-left: -50px;
     gap: 0px;
+  }
+  .logo {
+    margin-left: 05px;
   }
 }
 

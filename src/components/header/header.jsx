@@ -55,48 +55,56 @@ export default function Headers() {
       </header>
       <div className="menu">
         <div>
-          <Button
-            style={buttonStyle}
-            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
-            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
-            size="small"
-            variant="text"
-          >
-            home
-          </Button>
+          <Link to="/home">
+            <Button
+              style={buttonStyle}
+              onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+              onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+              size="small"
+              variant="text"
+            >
+              home
+            </Button>
+          </Link>
         </div>
         <div>
-          <Button
-            style={buttonStyle}
-            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
-            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
-            size="small"
-            variant="text"
-          >
-            Cachorro
-          </Button>
+          <Link to="/cachorro">
+            <Button
+              style={buttonStyle}
+              onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+              onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+              size="small"
+              variant="text"
+            >
+              Cachorro
+            </Button>{" "}
+          </Link>
         </div>
         <div>
-          <Button
-            style={buttonStyle}
-            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
-            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
-            size="small"
-            variant="text"
-          >
-            Gato
-          </Button>
+          <Link to="/gatos">
+            <Button
+              style={buttonStyle}
+              onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+              onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+              size="small"
+              variant="text"
+            >
+              Gato
+            </Button>
+          </Link>
         </div>
         <div>
-          <Button
-            style={buttonStyle}
-            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
-            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
-            size="small"
-            variant="text"
-          >
-            Répteis e Insetos
-          </Button>
+          <Link to="/reptil">
+            <Button
+              style={buttonStyle}
+              onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+              onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+              size="small"
+              variant="text"
+            >
+              Répteis e Insetos
+            </Button>
+          </Link>
         </div>
         <div>
           <Button
@@ -120,14 +128,6 @@ export default function Headers() {
             Nos deixe um card
           </Button>
         </div>
-      </div>
-      <div className="banner">
-        <img
-          src="https://www2.itanhaem.sp.gov.br/wp-content/uploads/2017/06/adote-animal_foto-site-750x450px.png"
-          alt="adoto_um_pet"
-          width="90%"
-          height="600px"
-        />
       </div>
     </>
   );

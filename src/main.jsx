@@ -3,6 +3,9 @@ import { render } from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Welcome from "./components/Welcome/Welcome";
+import Dogs from "./components/dog/dogs";
+import Cats from "./components/cat/cats";
+import Snake from "./components/snake/snake";
 
 render(
   <React.StrictMode>
@@ -10,6 +13,9 @@ render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/home" element={<Welcome />} />
+        <Route path="/cachorro" element={<Dogs />} />
+        <Route path="/gatos" element={<Cats />} />
+        <Route path="/reptil" element={<Snake />} />
       </Routes>
     </Router>
   </React.StrictMode>,

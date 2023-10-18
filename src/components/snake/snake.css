@@ -1,0 +1,15 @@
+h2.destaque {
+  text-decoration: underline;
+  margin: 20px 100px 40px;
+}
+
+@media screen and (max-width: 700px) {
+  h2.destaque {
+    margin: 20px 30px 40px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  h2.destaque {
+    margin: 20px 40px 40px;
+  }
+}
