@@ -6,6 +6,7 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 
 import "./shop.css";
+import Footer from "../footer/footer";
 
 export default function Shopper({ adicionarAoCarrinho }) {
   const [count, setCount] = useState(0);
@@ -27,7 +28,7 @@ export default function Shopper({ adicionarAoCarrinho }) {
   return (
     <div>
       <Headers />
-      <div className="button-container">
+      <div className="maismenos">
         <IconButton color="primary" onClick={handleDecrement}>
           <RemoveIcon />
         </IconButton>
@@ -45,6 +46,7 @@ export default function Shopper({ adicionarAoCarrinho }) {
           ))}
         </ul>
       </div>
+      <Footer />
     </div>
   );
 }
