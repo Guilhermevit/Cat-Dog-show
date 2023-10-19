@@ -5,3 +5,20 @@
   margin-top: 15px;
   margin-bottom: 0px;
 }
+
+.imagem {
+  width: 60%;
+  max-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .imagem {
+    max-height: 250px; /* Adjust the maximum height for screens up to 768px wide */
+  }
+}
+
+@media (max-width: 480px) {
+  .imagem {
+    max-height: 150px; /* Adjust the maximum height for smaller screens (up to 480px wide) */
+  }
+}

@@ -1,15 +1,18 @@
 h2.destaque {
-  text-decoration: underline;
-  margin: 20px 100px 40px;
+  text-decoration: underline; /* Sublinha o texto do título */
+  margin: 20px 100px 40px; /* Define margens: 20px (superior), 100px (direita), 40px (inferior), e 0 (esquerda) */
 }
 
 @media screen and (max-width: 700px) {
+  /* Define um estilo específico para telas com largura máxima de 700px */
   h2.destaque {
-    margin: 20px 30px 40px;
+    margin: 20px 30px 40px; /* Ajusta as margens para 20px (superior), 30px (direita), 40px (inferior), e 0 (esquerda) */
   }
 }
+
 @media screen and (min-width: 700px) and (max-width: 900px) {
+  /* Define um estilo específico para telas com largura mínima de 700px e largura máxima de 900px */
   h2.destaque {
-    margin: 20px 40px 40px;
+    margin: 20px 40px 40px; /* Ajusta as margens para 20px (superior), 40px (direita), 40px (inferior), e 0 (esquerda) */
   }
 }

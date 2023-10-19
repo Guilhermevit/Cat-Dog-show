@@ -21,6 +21,7 @@ export default function Cats() {
   const [loading, setLoading] = useState(true);
   const [carrinho, setCarrinho] = useState([]);
 
+  // Função para renderizar o indicador de progresso com rótulo
   function CircularProgressWithLabel(props) {
     return (
       <Box
@@ -55,6 +56,7 @@ export default function Cats() {
     );
   }
 
+  // Efeito que carrega produtos e simula atraso
   useEffect(() => {
     const produtosAleatorios = jsonData.Produtos.slice(0, maxCards).sort(
       () => 0.5 - Math.random()
@@ -71,6 +73,7 @@ export default function Cats() {
     };
   }, []);
 
+  // Efeito que atualiza o progresso
   useEffect(() => {
     const timer = setInterval(() => {
       setProgress((prevProgress) =>
@@ -83,16 +86,20 @@ export default function Cats() {
     };
   }, []);
 
+  // Função para adicionar um produto ao carrinho
   const adicionarAoCarrinho = (produto) => {
     setCarrinho([...carrinho, produto]);
     console.log("Card Clicado Produto:", produto);
   };
+
   return (
+    // Componente principal de Cats
     <>
       <Headers />
       <Banner />
       <br />
       {loading ? (
+        // Renderiza um indicador de progresso enquanto loading é true
         <CircularProgressWithLabel value={progress} />
       ) : (
         <div>
@@ -187,7 +194,7 @@ export default function Cats() {
             </Grid>
           </div>
           <Footer />
-        </div>
+        </div> //Renderiza o rodapé da pagina
       )}
     </>
   );

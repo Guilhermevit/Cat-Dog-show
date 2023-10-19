@@ -11,15 +11,16 @@ import Box from "@mui/material/Box";
 import Headers from "../header/header";
 import Footer from "../footer/footer";
 import Banner from "../banner/banner";
-import "./dogs.css";
+import "./dogs.css"; // Importa folha de estilo específica para cães
 
 export default function Dogs() {
   const maxCards = 12;
-  const [produtos, setProdutos] = useState([]);
-  const [progress, setProgress] = useState(10);
-  const [loading, setLoading] = useState(true); // Estado para controlar o carregamento
-  const [carrinho, setCarrinho] = useState([]);
+  const [produtos, setProdutos] = useState([]); // Estado para armazenar os produtos exibidos
+  const [progress, setProgress] = useState(10); // Estado para o indicador de progresso
+  const [loading, setLoading] = useState(true); // Estado para controlar o carregamento da página
+  const [carrinho, setCarrinho] = useState([]); // Estado para o carrinho de compras
 
+  // Função para renderizar o indicador de progresso com rótulo
   function CircularProgressWithLabel(props) {
     return (
       <Box
@@ -54,6 +55,7 @@ export default function Dogs() {
     );
   }
 
+  // Efeito que carrega produtos e simula um atraso de 3 segundos
   useEffect(() => {
     const produtosAleatorios = jsonData.Produtos.slice(0, maxCards).sort(
       () => 0.5 - Math.random()
@@ -70,6 +72,7 @@ export default function Dogs() {
     };
   }, []);
 
+  // Efeito que atualiza o progresso em intervalos de 300 milissegundos
   useEffect(() => {
     const timer = setInterval(() => {
       setProgress((prevProgress) =>
@@ -82,16 +85,19 @@ export default function Dogs() {
     };
   }, []);
 
+  // Função para adicionar um produto ao carrinho
   const adicionarAoCarrinho = (produto) => {
     setCarrinho([...carrinho, produto]);
     console.log("Card Clicado Produto:", produto);
   };
+
   return (
     <>
       <Headers />
       <Banner />
       <br />
       {loading ? (
+        // Renderiza um indicador de progresso enquanto loading é true
         <CircularProgressWithLabel value={progress} />
       ) : (
         <div>

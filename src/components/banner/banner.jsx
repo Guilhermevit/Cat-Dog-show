@@ -4,10 +4,9 @@ export default function Banner() {
   return (
     <div className="banner">
       <img
-        src="https://www2.itanhaem.sp.gov.br/wp-content/uploads/2017/06/adote-animal_foto-site-750x450px.png"
+        src="https://www.institutosantopet.org.br/uploads/images/2020/02/como-a-adocao-de-um-pet-pode-mudar-a-vida-das-pessoas-1582227453.png"
         alt="adoto_um_pet"
-        width="90%"
-        height="450px"
+        className="imagem"
       />
     </div>
   );

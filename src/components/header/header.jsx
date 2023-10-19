@@ -3,24 +3,25 @@ import { Link } from "react-router-dom";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import jsonData from "../cards/produtos.json";
-
+//Importação do MaterialUi e componentes de rotas
 import "./header.css";
-
+//Importação do CSS
 export default function Headers() {
   const [buttonStyle, setButtonStyle] = useState({
     color: "#7c67079b",
   });
+  //Components de estado da cor do botão
   const [searchInput, setSearchInput] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-
+  //Componente de estado de procura de produtos no cmpo busca
   const customButtonHoverStyle = {
     ...buttonStyle,
     backgroundColor: "white",
   };
+  //estilização da cor do botao
 
   useEffect(() => {
     if (searchInput.length > 2) {
-      // Filtrar produtos com base na entrada de pesquisa
       const products = jsonData.Produtos; // Acessar a matriz de produtos dentro do objeto jsonData
       const filteredProducts = products.filter((product) =>
         product.nome.toLowerCase().includes(searchInput.toLowerCase())
@@ -30,6 +31,8 @@ export default function Headers() {
       setSearchResults([]);
     }
   }, [searchInput]);
+
+  //Esse UseEffect esta lendo o nosso json e filtrando os produtos usando o toLowerCase para nao ter diferença entre maiuscula e minuscula
   return (
     <>
       <header className="header">
@@ -43,6 +46,7 @@ export default function Headers() {
             />
           </Link>
         </div>
+        {/* Inserção do cabeçaho */}
         <div className="pesquisa">
           <TextField
             id="outlined-textarea"
@@ -52,6 +56,7 @@ export default function Headers() {
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
           />
+          {/* Inserção do campo de pesquisa */}
           <Button className="lupa">
             {" "}
             <img
