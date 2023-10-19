@@ -1,8 +1,8 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
+import jsonData from "../cards/produtos.json";
 
 import "./header.css";
 
@@ -10,11 +10,26 @@ export default function Headers() {
   const [buttonStyle, setButtonStyle] = useState({
     color: "#7c67079b",
   });
+  const [searchInput, setSearchInput] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
 
   const customButtonHoverStyle = {
     ...buttonStyle,
     backgroundColor: "white",
   };
+
+  useEffect(() => {
+    if (searchInput.length > 2) {
+      // Filtrar produtos com base na entrada de pesquisa
+      const products = jsonData.Produtos; // Acessar a matriz de produtos dentro do objeto jsonData
+      const filteredProducts = products.filter((product) =>
+        product.nome.toLowerCase().includes(searchInput.toLowerCase())
+      );
+      setSearchResults(filteredProducts);
+    } else {
+      setSearchResults([]);
+    }
+  }, [searchInput]);
   return (
     <>
       <header className="header">
@@ -32,8 +47,10 @@ export default function Headers() {
           <TextField
             id="outlined-textarea"
             label="Produtos"
-            placeholder="o que seu pet precisa?"
+            placeholder="O que seu pet precisa?"
             style={{ width: "50%" }}
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
           />
           <Button className="lupa">
             {" "}
@@ -52,7 +69,18 @@ export default function Headers() {
             />
           </Button>
         </div>
-      </header>
+      </header>{" "}
+      <div className="procura">
+        {searchResults.map((product) => (
+          <div className="card" key={product.id}>
+            <img src={product.imagem} alt={product.nome} />
+            <div className="card-info">
+              <h3>{product.nome}</h3>
+            </div>
+          </div>
+        ))}
+      </div>
+      <br />
       <div className="menu">
         <div>
           <Link to="/home">
@@ -63,7 +91,7 @@ export default function Headers() {
               size="small"
               variant="text"
             >
-              home
+              Home
             </Button>
           </Link>
         </div>

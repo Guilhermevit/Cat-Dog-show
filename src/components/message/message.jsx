@@ -21,7 +21,6 @@ export default function Message() {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    // Recupera os cards do localStorage quando o componente é montado
     const savedCards = localStorage.getItem("savedCards");
     if (savedCards) {
       setCards(JSON.parse(savedCards));
@@ -29,7 +28,6 @@ export default function Message() {
   }, []);
 
   useEffect(() => {
-    // Salva os cards no localStorage sempre que a lista de cards for atualizada
     localStorage.setItem("savedCards", JSON.stringify(cards));
   }, [cards]);
 
@@ -43,6 +41,10 @@ export default function Message() {
     setName("");
     setMessage("");
     setSubmitted(true);
+  };
+
+  const clearCards = () => {
+    setCards([]);
   };
 
   return (
@@ -71,42 +73,41 @@ export default function Message() {
           <Button type="submit" variant="contained" color="primary">
             Enviar
           </Button>
+          <Button variant="contained" color="secondary" onClick={clearCards}>
+            Limpar Cartões
+          </Button>
         </form>
         <div className="message-cards">
           <Grid container spacing={1}>
             {cards.map((card, index) => (
-              <>
-                <Grid item xs={12} sm={6} md={5} key={index}>
-                  <Card className="message-card">
-                    <CardContent>
-                      <Typography variant="h6" gutterBottom>
-                        {card.name}
-                      </Typography>
-                      <Typography variant="body2" color="textSecondary">
-                        Mensagem: {card.message}
-                      </Typography>
-                    </CardContent>
-                    <CardActions>
-                      <Grid container spacing={1} justifyContent="center">
-                        <Grid item>
-                          <Avatar alt="Soul-Code" src="./soulcode.jpg" />
-                        </Grid>
-                        <Grid item>
-                          <Avatar alt="logo" src="./logo.jpg" />
-                        </Grid>
-                        <Grid item>
-                          <Avatar
-                            alt="Avatar"
-                            src="https://previews.123rf.com/images/yupiramos/yupiramos1705/yupiramos170526145/78529288-dise%C3%B1o-de-avatar-humano-silueta-icono-vector-ilustraci%C3%B3n.jpg"
-                          />
-                        </Grid>
+              <Grid item xs={10} sm={5} md={7} key={index}>
+                <Card className="message-card">
+                  <CardContent>
+                    <Typography variant="h6" gutterBottom>
+                      {card.name}
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      Mensagem: {card.message}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Grid container spacing={1} justifyContent="center">
+                      <Grid item>
+                        <Avatar alt="Soul-Code" src="./soulcode.jpg" />
                       </Grid>
-                    </CardActions>
-                  </Card>
-                </Grid>
-                {(index + 1) % 8 === 0 && <br />}{" "}
-                {/* Quebra de linha após cada grupo de 8 cards */}
-              </>
+                      <Grid item>
+                        <Avatar alt="logo" src="./logo.jpg" />
+                      </Grid>
+                      <Grid item>
+                        <Avatar
+                          alt="Avatar"
+                          src="https://previews.123rf.com/images/yupiramos/yupiramos1705/yupiramos170526145/78529288-dise%C3%B1o-de-avatar-humano-silueta-icono-vector-ilustraci%C3%B3n.jpg"
+                        />
+                      </Grid>
+                    </Grid>
+                  </CardActions>
+                </Card>
+              </Grid>
             ))}
           </Grid>
         </div>

@@ -22,6 +22,8 @@ export function LoginForm({ handleSubmit }) {
         <Input
           type="email"
           placeholder="E-mail"
+          className="sc-eCAqax fDVNNZ"
+          autoComplete="username"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -29,6 +31,8 @@ export function LoginForm({ handleSubmit }) {
           type="password"
           placeholder="Senha"
           value={password}
+          className="sc-eCAqax fDVNNZ"
+          autoComplete="current-password"
           onChange={(e) => setPassword(e.target.value)}
         />
       </FormContainer>

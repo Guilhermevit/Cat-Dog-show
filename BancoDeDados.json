@@ -16,5 +16,11 @@
     "name": "Emerson Marques Pedro",
     "email": "emersonmp@gmail.com",
     "password": "1234567"
+  },
+  {
+    "id": 4,
+    "name": "Tabatha",
+    "email": "tabathabc@gmail.com",
+    "password": "123"
   }
 ]
