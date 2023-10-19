@@ -43,15 +43,14 @@ export default function Headers() {
               width="40px"
             />
           </Button>
-          <Link to="/carrinho">
-            <Button className="shopping">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqeQKC741sH_vTY7iY5_N2iXvO3SERNX4qg&usqp=CAU"
-                alt="carrinho_de_compra"
-                width="45px"
-              />
-            </Button>
-          </Link>
+
+          <Button className="shopping">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqeQKC741sH_vTY7iY5_N2iXvO3SERNX4qg&usqp=CAU"
+              alt="carrinho_de_compra"
+              width="45px"
+            />
+          </Button>
         </div>
       </header>
       <div className="menu">
@@ -108,7 +107,7 @@ export default function Headers() {
           </Link>
         </div>
         <div>
-          <Link to="/carrinho">
+          <Link to="/humano">
             <Button
               style={buttonStyle}
               onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
@@ -116,20 +115,22 @@ export default function Headers() {
               size="small"
               variant="text"
             >
-              Compras
+              Humanos
             </Button>
           </Link>
         </div>
         <div>
-          <Button
-            style={buttonStyle}
-            onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
-            onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
-            size="small"
-            variant="text"
-          >
-            Nos deixe um card
-          </Button>
+          <Link to="/mensagem">
+            <Button
+              style={buttonStyle}
+              onMouseEnter={() => setButtonStyle(customButtonHoverStyle)}
+              onMouseLeave={() => setButtonStyle({ color: "#7c67079b" })}
+              size="small"
+              variant="text"
+            >
+              Nos deixe um card
+            </Button>
+          </Link>
         </div>
       </div>
     </>

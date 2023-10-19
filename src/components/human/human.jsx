@@ -4,21 +4,20 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea } from "@mui/material";
+import { CardActionArea } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
-
-import "./cats.css";
 import Headers from "../header/header";
 import Footer from "../footer/footer";
 import Banner from "../banner/banner";
+import "./human.css";
 
-export default function Cats() {
-  const maxCards = 22;
+export default function Human() {
+  const maxCards = 50;
   const [produtos, setProdutos] = useState([]);
   const [progress, setProgress] = useState(10);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); // Estado para controlar o carregamento
   const [carrinho, setCarrinho] = useState([]);
 
   function CircularProgressWithLabel(props) {
@@ -96,14 +95,11 @@ export default function Cats() {
         <CircularProgressWithLabel value={progress} />
       ) : (
         <div>
-          <h2 className="destaque">Produtos para o Miauuuuu</h2>
+          <h2 className="destaque">Produtos você mesmo serHumaninho Lindo</h2>
           <div style={{ maxWidth: "90%", margin: "0 auto" }}>
             <Grid container spacing={2}>
               {produtos
-                .filter(
-                  (produto) =>
-                    produto.tipo === "Gatos" || produto.tipo === "Ambos"
-                )
+                .filter((produto) => produto.tipo === "Humano")
                 .map((produto) => {
                   const precoOriginal = produto.preco;
                   const precoComDesconto = precoOriginal * 1.1;

@@ -6,7 +6,8 @@ import Welcome from "./components/Welcome/Welcome";
 import Dogs from "./components/dog/dogs";
 import Cats from "./components/cat/cats";
 import Snake from "./components/snake/snake";
-import Shopper from "./components/shop/shop";
+import Human from "./components/human/human";
+import Message from "./components/message/message";
 
 render(
   <React.StrictMode>
@@ -17,7 +18,8 @@ render(
         <Route path="/cachorro" element={<Dogs />} />
         <Route path="/gatos" element={<Cats />} />
         <Route path="/reptil" element={<Snake />} />
-        <Route path="/carrinho" element={<Shopper />} />
+        <Route path="/humano" element={<Human />} />
+        <Route path="/mensagem" element={<Message />} />
       </Routes>
     </Router>
   </React.StrictMode>,

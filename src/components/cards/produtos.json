@@ -177,7 +177,7 @@
       "tipo": "Gatos"
     },
     {
-      "id": 21,
+      "id": 23,
       "nome": "Tapete para Répteis",
       "descricao": "O Tapete Natural para Répteis oferece  um ambiente limpo e aquecido, garantindo o conforto e a segurança",
       "preco": 79.9,
@@ -185,12 +185,52 @@
       "tipo": "Reptil"
     },
     {
-      "id": 22,
+      "id": 24,
       "nome": "Terrário de Acrílico",
       "descricao": "O Terrário de Acrílico para Répteis e Insetos é o lugar perfeito para criar um ambiente confortável",
       "preco": 150.9,
       "imagem": "https://petmagia.com.br/cdn/shop/products/H8b5531a244e54e84b78ce70877fc56c21_600x.jpg?v=1681235609",
       "tipo": "Reptil"
+    },
+    {
+      "id": 25,
+      "nome": "Cobertor",
+      "descricao": "Nosso Cobertor com Estampa de Cachorros - Dachshund Magia é feito com tecido macio e aconchegante",
+      "preco": 219.9,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/S86022a3eb66a4c4c81134924b45928edT_600x.jpg?v=1674585705",
+      "tipo": "Humano"
+    },
+    {
+      "id": 26,
+      "nome": "Camiseta Feminina",
+      "descricao": "Esta estampa é uma homenagem à icônica trilogia dos anos 70, com um toque pet exclusivo.",
+      "preco": 99.9,
+      "imagem": "https://petmagia.com.br/cdn/shop/files/16_d7776e42-aec5-4352-9e7c-71f00d9e9e34_600x.png?v=1696335085",
+      "tipo": "Humano"
+    },
+    {
+      "id": 27,
+      "nome": "Ecobag",
+      "descricao": "Se você busca uma ecobag sustentável, descontraída e bem-humorada",
+      "preco": 59.9,
+      "imagem": "https://petmagia.com.br/cdn/shop/files/staypawsitive_600x.png?v=1695922310",
+      "tipo": "Humano"
+    },
+    {
+      "id": 28,
+      "nome": "Camiseta Masculina",
+      "descricao": "Disponível em uma variedade de cores, incluindo vermelho, azul, preto e branco.",
+      "preco": 99.9,
+      "imagem": "https://petmagia.com.br/cdn/shop/files/11_eccd210e-751c-4ac2-8a33-00ced2cc3698_600x.png?v=1696333748",
+      "tipo": "Humano"
+    },
+    {
+      "id": 29,
+      "nome": "Edredom Colcha",
+      "descricao": "Um edredom quente e confortável é um sonho de consumo durante o inverno ou durante uma frente fria. ",
+      "preco": 269.9,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/S7dd2bf563ee84018b967747dc0e3ac32x_600x.jpg?v=1674226058",
+      "tipo": "Humano"
     }
   ]
 }
