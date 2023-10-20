@@ -39,7 +39,7 @@ export default function Headers() {
         <div className="logo">
           <Link to="/home">
             <img
-              src="https://st3.depositphotos.com/13653374/16346/i/450/depositphotos_163469778-stock-photo-adorable-cat-face-print.jpg"
+              src="./logo2.jpg"
               alt="Logo da Loja"
               width="150px"
               height="150px"

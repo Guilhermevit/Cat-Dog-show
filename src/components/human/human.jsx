@@ -95,7 +95,9 @@ export default function Human() {
         <CircularProgressWithLabel value={progress} />
       ) : (
         <div>
-          <h2 className="destaque">Produtos você mesmo serHumaninho Lindo</h2>
+          <h2 className="destaque">
+            Produtos para você mesmo serHumaninho Lindo
+          </h2>
           <div style={{ maxWidth: "90%", margin: "0 auto" }}>
             <Grid container spacing={2}>
               {produtos
