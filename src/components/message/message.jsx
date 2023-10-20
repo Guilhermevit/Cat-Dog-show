@@ -8,18 +8,20 @@ import {
   TextField,
   Typography,
   Grid,
-} from "@mui/material";
-import Headers from "../header/header";
-import Footer from "../footer/footer";
+} from "@mui/material"; // Importa componentes do Material-UI
+import Headers from "../header/header"; // Importa um componente de cabeçalho
+import Footer from "../footer/footer"; // Importa um componente de rodapé
 
-import "./message.css";
+import "./message.css"; // Importa estilos CSS
 
 export default function Message() {
+  // Define estados usando o useState
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [cards, setCards] = useState([]);
 
+  // useEffect para carregar cartões salvos do localStorage ao montar o componente
   useEffect(() => {
     const savedCards = localStorage.getItem("savedCards");
     if (savedCards) {
@@ -27,10 +29,12 @@ export default function Message() {
     }
   }, []);
 
+  // useEffect para salvar os cartões no localStorage sempre que eles forem atualizados
   useEffect(() => {
     localStorage.setItem("savedCards", JSON.stringify(cards));
   }, [cards]);
 
+  // Função para lidar com o envio do formulário
   const handleSubmit = (e) => {
     e.preventDefault();
     const newCard = {
@@ -43,13 +47,14 @@ export default function Message() {
     setSubmitted(true);
   };
 
+  // Função para limpar todos os cartões
   const clearCards = () => {
     setCards([]);
   };
 
   return (
     <>
-      <Headers />
+      <Headers /> {/* Renderiza o componente de cabeçalho */}
       <div className="message-container">
         <form onSubmit={handleSubmit} className="message-form">
           <TextField
@@ -80,7 +85,7 @@ export default function Message() {
         <div className="message-cards">
           <Grid container spacing={1}>
             {cards.map((card, index) => (
-              <Grid item xs={12} sm={6} md={6} key={index}>
+              <Grid item xs={10} sm={5} md={7} key={index}>
                 <Card className="message-card">
                   <CardContent>
                     <Typography variant="h6" gutterBottom>
@@ -112,7 +117,7 @@ export default function Message() {
           </Grid>
         </div>
       </div>
-      <Footer />
+      <Footer /> {/* Renderiza o componente de rodapé */}
     </>
   );
 }

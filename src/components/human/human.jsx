@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import jsonData from "../cards/produtos.json";
+import jsonData from "../cards/produtos.json"; // Importa dados de produtos de um arquivo JSON
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -8,18 +8,19 @@ import { CardActionArea } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
-import Headers from "../header/header";
-import Footer from "../footer/footer";
-import Banner from "../banner/banner";
-import "./human.css";
+import Headers from "../header/header"; // Importa um componente de cabeçalho
+import Footer from "../footer/footer"; // Importa um componente de rodapé
+import Banner from "../banner/banner"; // Importa um componente de banner
+import "./human.css"; // Importa estilos CSS
 
 export default function Human() {
-  const maxCards = 50;
-  const [produtos, setProdutos] = useState([]);
-  const [progress, setProgress] = useState(10);
+  const maxCards = 50; // Número máximo de cartões a serem exibidos
+  const [produtos, setProdutos] = useState([]); // Estado para armazenar produtos
+  const [progress, setProgress] = useState(10); // Estado para controlar o progresso
   const [loading, setLoading] = useState(true); // Estado para controlar o carregamento
-  const [carrinho, setCarrinho] = useState([]);
+  const [carrinho, setCarrinho] = useState([]); // Estado para armazenar produtos no carrinho
 
+  // Função para renderizar um CircularProgress com um rótulo
   function CircularProgressWithLabel(props) {
     return (
       <Box
@@ -55,43 +56,48 @@ export default function Human() {
   }
 
   useEffect(() => {
+    // Carrega produtos aleatórios, os embaralha e define o estado "produtos"
     const produtosAleatorios = jsonData.Produtos.slice(0, maxCards).sort(
       () => 0.5 - Math.random()
-    ); // Embaralha a lista de produtos
+    );
     setProdutos(produtosAleatorios);
 
     // Simula um atraso de 3 segundos antes de mostrar o Grid
     const delay = setTimeout(() => {
-      setLoading(false); // Define loading como false após o atraso
+      setLoading(false); // Define "loading" como false após o atraso
     }, 3000);
 
+    // Limpa o temporizador quando o componente é desmontado
     return () => {
       clearTimeout(delay);
     };
   }, []);
 
   useEffect(() => {
+    // Atualiza o progresso em intervalos regulares
     const timer = setInterval(() => {
       setProgress((prevProgress) =>
         prevProgress >= 100 ? 0 : prevProgress + 10
       );
     }, 300);
 
+    // Limpa o temporizador quando o componente é desmontado
     return () => {
       clearInterval(timer);
     };
   }, []);
 
+  // Função para adicionar um produto ao carrinho
   const adicionarAoCarrinho = (produto) => {
-    setCarrinho([...carrinho, produto]);
-    console.log("Card Clicado Produto:", produto);
+    setCarrinho([...carrinho, produto]); // Adiciona o produto ao carrinho
+    console.log("Card Clicado Produto:", produto); // Exibe informações do produto no console
   };
   return (
     <>
-      <Headers />
-      <Banner />
+      <Headers /> {/* Renderiza o componente de cabeçalho */}
+      <Banner /> {/* Renderiza o componente de banner */}
       <br />
-      {loading ? (
+      {loading ? ( // Renderização condicional: exibe CircularProgress ou lista de produtos
         <CircularProgressWithLabel value={progress} />
       ) : (
         <div>
@@ -109,7 +115,7 @@ export default function Human() {
                   return (
                     <Grid item key={produto.id} xs={7} sm={4} md={2}>
                       <div
-                        onClick={() => adicionarAoCarrinho(produto)}
+                        onClick={() => adicionarAoCarrinho(produto)} // Adiciona o produto ao carrinho ao clicar no card
                         style={{ cursor: "pointer" }}
                       >
                         <Card
@@ -184,7 +190,7 @@ export default function Human() {
                 })}
             </Grid>
           </div>
-          <Footer />
+          <Footer /> {/* Renderiza o componente de rodapé */}
         </div>
       )}
     </>
