@@ -239,6 +239,14 @@
       "preco": 35.41,
       "imagem": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRBgVIa-4JxpSO9qYVwH568wpd8VetKhL0ZRydcBs6KRb0nK45mOL4fiUPW2MZjcA2FZb-zN9p8slKn787_zSY_u38TZuryHV7axl_d7hhLAuBigbfnry8q&usqp=CAE",
       "tipo": "Reptil"
+    },
+    {
+      "id": 31,
+      "nome": "Formigueiro Artificial",
+      "descricao": "Esse formigueiro artificial em acrílico  permite criar uma colônia de até 450 formigas",
+      "preco": 170.9,
+      "imagem": "https://petmagia.com.br/cdn/shop/products/product-image-1419318076_400x.jpg?v=1670280034",
+      "tipo": "Reptil"
     }
   ]
 }

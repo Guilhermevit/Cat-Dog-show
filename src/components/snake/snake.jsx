@@ -14,7 +14,7 @@ import Banner from "../banner/banner";
 import "./snake.css";
 
 export default function Snake() {
-  const maxCards = 30;
+  const maxCards = 35;
   const [produtos, setProdutos] = useState([]);
   const [progress, setProgress] = useState(10);
   const [loading, setLoading] = useState(true); // Estado para controlar o carregamento
