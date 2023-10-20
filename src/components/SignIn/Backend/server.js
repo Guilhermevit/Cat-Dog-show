@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 
 // Rota PUT para atualizar o arquivo BancoDeDados.json
 app.put("/update", (req, res) => {
-    console.log("Recebido PUT request com dados:", req.body);
+    
 
     const newData = req.body; // Os novos dados que você deseja salvar
 

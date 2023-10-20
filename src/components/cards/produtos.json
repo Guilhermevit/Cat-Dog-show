@@ -231,6 +231,14 @@
       "preco": 269.9,
       "imagem": "https://petmagia.com.br/cdn/shop/products/S7dd2bf563ee84018b967747dc0e3ac32x_600x.jpg?v=1674226058",
       "tipo": "Humano"
+    },
+    {
+      "id": 30,
+      "nome": "Rato congelado",
+      "descricao": "Ratos Camundongos Congelados BP5 PP(9 a 11g) Pacote Pequeno c/ 05 ",
+      "preco": 35.41,
+      "imagem": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRBgVIa-4JxpSO9qYVwH568wpd8VetKhL0ZRydcBs6KRb0nK45mOL4fiUPW2MZjcA2FZb-zN9p8slKn787_zSY_u38TZuryHV7axl_d7hhLAuBigbfnry8q&usqp=CAE",
+      "tipo": "Reptil"
     }
   ]
 }

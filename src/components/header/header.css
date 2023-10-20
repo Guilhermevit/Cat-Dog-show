@@ -1,4 +1,4 @@
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,11 +9,11 @@ header {
 .logo {
   flex: 3;
   padding: 20px;
-  margin-left: 62px;
+  margin-left: 72px;
 }
 
 .pesquisa {
-  flex: 10;
+  flex: 12;
   display: flex;
   align-items: center;
 }
@@ -88,5 +88,5 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }

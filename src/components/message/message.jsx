@@ -80,7 +80,7 @@ export default function Message() {
         <div className="message-cards">
           <Grid container spacing={1}>
             {cards.map((card, index) => (
-              <Grid item xs={10} sm={5} md={7} key={index}>
+              <Grid item xs={12} sm={6} md={6} key={index}>
                 <Card className="message-card">
                   <CardContent>
                     <Typography variant="h6" gutterBottom>
