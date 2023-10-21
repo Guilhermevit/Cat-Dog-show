@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { AccountContext } from "./accountContext";
-import { LoginForm } from "./loginForm";
-import { SignupForm } from "./signupForm";
+import { AccountContext } from "./marginer/accountContext";
+import { LoginForm } from "./forms/loginForm";
+import { SignupForm } from "./forms/signupForm";
 import { login } from "./Backend/autenticar";
 import { registrar } from "./Backend/cadastrar";
 
@@ -147,7 +147,7 @@ export default function SignIn(props) {
           height="120px"
         />
       </div>
-      {/* Montagm do formulario ou de login ou do cadastro  */}
+      {/* Montagm do layout ou de login ou do cadastro  */}
       <AccountContext.Provider value={contextValue}>
         <BoxContainer>
           <TopContainer>

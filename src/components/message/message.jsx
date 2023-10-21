@@ -101,7 +101,7 @@ export default function Message() {
                         <Avatar alt="Soul-Code" src="./soulcode.jpg" />
                       </Grid>
                       <Grid item>
-                        <Avatar alt="logo" src="./logo.jpg" />
+                        <Avatar alt="logo" src="./logo2.jpg" />
                       </Grid>
                       <Grid item>
                         <Avatar
